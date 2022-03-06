@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="atividadeemaula.FXMLAppController">
+   <children>
+      <Button fx:id="botao" defaultButton="true" layoutX="89.0" layoutY="145.0" mnemonicParsing="false" onAction="#inserir" text="Salvar" />
+      <Label fx:id="label" layoutX="101.0" layoutY="183.0" text="Label" />
+      <TextField fx:id="campo" layoutX="41.0" layoutY="209.0" />
+      <ListView fx:id="listView" layoutX="217.0" layoutY="34.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="botaoDeletarPrimeiro" layoutX="304.0" layoutY="244.0" mnemonicParsing="false" onAction="#deletarPrimeiro" text="Deletar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="raiz" layoutX="10.0" layoutY="20.0" prefHeight="250.0" prefWidth="500.0" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="lbTitulo" text="Pesquisa sobre Programação" underline="true" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Nome: " />
+            <TextField id="txtNome" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox id="hbSO" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label text="Sistema Operacional Utilizado" />
+            <ToggleButton id="tbLinux" mnemonicParsing="false" selected="true" text="Linux" />
+            <ToggleButton id="tbWindows" mnemonicParsing="false" text="Windows" />
+            <ToggleButton id="tbMac" mnemonicParsing="false" text="Mac" />
+         </children>
+      </HBox>
+      <HBox id="hbLinguagens" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label text="Linguagem de programação predileta:" />
+            <RadioButton id="rbJava" mnemonicParsing="false" selected="true" text="Java" />
+            <RadioButton id="rbC" mnemonicParsing="false" text="C" />
+            <RadioButton id="rbPython" mnemonicParsing="false" text="Python" />
+         </children>
+      </HBox>
+      <CheckBox id="chkFrequencia" mnemonicParsing="false" text="Programa todo dia?" />
+      <CheckBox id="chkGosto" allowIndeterminate="true" indeterminate="true" mnemonicParsing="false" text="Gosta de Programação?" />
+      <Button id="btnSubmeter" mnemonicParsing="false" text="Submeter" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</VBox>
